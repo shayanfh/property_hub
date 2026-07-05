@@ -18,12 +18,12 @@ def execute(filters=None):
 	where = "1=1"
 	values = {}
 	if filters.get("owner"):
-		where += " AND p.owner = %(owner)s"
+		where += " AND p.property_owner = %(owner)s"
 		values["owner"] = filters["owner"]
 
 	data = frappe.db.sql(f"""
 		SELECT
-			p.owner,
+			p.property_owner AS owner,
 			p.name AS property_name,
 			p.property_code,
 			p.city,
@@ -36,7 +36,7 @@ def execute(filters=None):
 		LEFT JOIN `tabProperty Unit` pu ON pu.property = p.name
 		WHERE {where}
 		GROUP BY p.name
-		ORDER BY p.owner, p.name
+		ORDER BY p.property_owner, p.name
 	""", values, as_dict=True)
 
 	return columns, data

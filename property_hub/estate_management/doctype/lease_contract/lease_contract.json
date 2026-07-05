@@ -5,7 +5,7 @@
   "editable_grid": 1,
   "engine": "InnoDB",
   "field_order": [
-    "naming_series","tenant","owner","column_break_1","property","unit",
+    "naming_series","tenant","property_owner","column_break_1","property","unit",
     "section_break_dates","start_date","end_date","column_break_2",
     "rent_amount","payment_frequency","security_deposit",
     "section_break_status","status","notes_section","notes"
@@ -13,7 +13,7 @@
   "fields": [
     {"fieldname":"naming_series","fieldtype":"Series","label":"Series","options":"LC-.YYYY.-.#####"},
     {"fieldname":"tenant","fieldtype":"Link","label":"Tenant / Customer","options":"Customer","reqd":1,"in_list_view":1,"in_standard_filter":1},
-    {"fieldname":"owner","fieldtype":"Link","label":"Owner","options":"Property Owner","reqd":1,"in_list_view":1},
+    {"fieldname":"property_owner","fieldtype":"Link","label":"Owner","options":"Property Owner","reqd":1,"in_list_view":1},
     {"fieldname":"column_break_1","fieldtype":"Column Break"},
     {"fieldname":"property","fieldtype":"Link","label":"Property","options":"Property","reqd":1,"in_list_view":1,"in_standard_filter":1},
     {"fieldname":"unit","fieldtype":"Link","label":"Unit","options":"Property Unit","reqd":1,"in_list_view":1},

@@ -263,7 +263,7 @@ def _create_properties(owner_names):
 			"doctype": "Property",
 			"property_name": p["property_name"],
 			"property_code": p["property_code"],
-			"owner": owner_names[p["owner_index"]],
+			"property_owner": owner_names[p["owner_index"]],
 			"property_type": p["property_type"],
 			"address": p["address"],
 			"city": p["city"],
@@ -378,7 +378,7 @@ def _create_lease_contracts(tenant_names, owner_names, property_names, unit_name
 		lc = frappe.get_doc({
 			"doctype": "Lease Contract",
 			"tenant": tenant,
-			"owner": owner,
+			"property_owner": owner,
 			"property": prop,
 			"unit": unit,
 			"start_date": start_date,
