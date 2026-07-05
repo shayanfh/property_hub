@@ -1,0 +1,45 @@
+{
+  "actions": [],
+  "autoname": "PROP-.#####",
+  "creation": "2026-07-05 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "property_name","property_code","column_break_1","owner","property_type",
+    "section_break_location","address","city","column_break_2","status",
+    "notes_section","notes"
+  ],
+  "fields": [
+    {"fieldname":"property_name","fieldtype":"Data","in_list_view":1,"in_standard_filter":1,"label":"Property Name","reqd":1},
+    {"fieldname":"property_code","fieldtype":"Data","label":"Property Code","in_list_view":1},
+    {"fieldname":"column_break_1","fieldtype":"Column Break"},
+    {"fieldname":"owner","fieldtype":"Link","label":"Owner","options":"Property Owner","reqd":1,"in_list_view":1,"in_standard_filter":1},
+    {"fieldname":"property_type","fieldtype":"Select","label":"Property Type","options":"\nResidential\nCommercial\nMixed Use\nLand\nWarehouse","in_standard_filter":1},
+    {"fieldname":"section_break_location","fieldtype":"Section Break","label":"Location"},
+    {"fieldname":"address","fieldtype":"Small Text","label":"Address"},
+    {"fieldname":"city","fieldtype":"Data","label":"City","in_standard_filter":1},
+    {"fieldname":"column_break_2","fieldtype":"Column Break"},
+    {"fieldname":"status","fieldtype":"Select","label":"Status","options":"\nAvailable\nOccupied\nUnder Maintenance\nInactive","default":"Available","in_list_view":1,"in_standard_filter":1},
+    {"fieldname":"notes_section","fieldtype":"Section Break","label":"Notes"},
+    {"fieldname":"notes","fieldtype":"Text Editor","label":"Notes"}
+  ],
+  "is_submittable": 0,
+  "links": [],
+  "modified": "2026-07-05 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Estate Management",
+  "name": "Property",
+  "naming_rule": "Naming Series",
+  "owner": "Administrator",
+  "permissions": [
+    {"create":1,"delete":1,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"System Manager","share":1,"write":1},
+    {"create":1,"delete":0,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"Accounts Manager","share":1,"write":1},
+    {"create":1,"delete":0,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"Accounts User","share":1,"write":1}
+  ],
+  "search_fields": "property_name,property_code,city",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "property_name",
+  "track_changes": 1
+}

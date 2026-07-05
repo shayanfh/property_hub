@@ -1,0 +1,48 @@
+{
+  "actions": [],
+  "creation": "2026-07-05 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series","property","unit","tenant","column_break_1",
+    "issue_type","priority","status",
+    "section_break_description","description",
+    "section_break_cost","estimated_cost","actual_cost","column_break_cost","purchase_invoice"
+  ],
+  "fields": [
+    {"fieldname":"naming_series","fieldtype":"Series","label":"Series","options":"MR-.YYYY.-.#####"},
+    {"fieldname":"property","fieldtype":"Link","label":"Property","options":"Property","reqd":1,"in_list_view":1,"in_standard_filter":1},
+    {"fieldname":"unit","fieldtype":"Link","label":"Unit","options":"Property Unit","in_list_view":1,"in_standard_filter":1},
+    {"fieldname":"tenant","fieldtype":"Link","label":"Tenant","options":"Customer","in_standard_filter":1},
+    {"fieldname":"column_break_1","fieldtype":"Column Break"},
+    {"fieldname":"issue_type","fieldtype":"Select","label":"Issue Type","options":"\nPlumbing\nElectrical\nHVAC\nStructural\nAppliance\nCleaning\nSecurity\nOther","in_standard_filter":1},
+    {"fieldname":"priority","fieldtype":"Select","label":"Priority","options":"\nLow\nMedium\nHigh\nUrgent","default":"Medium","in_list_view":1,"in_standard_filter":1},
+    {"fieldname":"status","fieldtype":"Select","label":"Status","options":"\nOpen\nAssigned\nIn Progress\nCompleted\nCancelled","default":"Open","in_list_view":1,"in_standard_filter":1},
+    {"fieldname":"section_break_description","fieldtype":"Section Break","label":"Description"},
+    {"fieldname":"description","fieldtype":"Text Editor","label":"Description","reqd":1},
+    {"fieldname":"section_break_cost","fieldtype":"Section Break","label":"Cost"},
+    {"fieldname":"estimated_cost","fieldtype":"Currency","label":"Estimated Cost"},
+    {"fieldname":"actual_cost","fieldtype":"Currency","label":"Actual Cost"},
+    {"fieldname":"column_break_cost","fieldtype":"Column Break"},
+    {"fieldname":"purchase_invoice","fieldtype":"Link","label":"Purchase Invoice","options":"Purchase Invoice"}
+  ],
+  "is_submittable": 0,
+  "links": [],
+  "modified": "2026-07-05 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Estate Management",
+  "name": "Maintenance Request",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {"create":1,"delete":1,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"System Manager","share":1,"write":1},
+    {"create":1,"delete":0,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"Accounts Manager","share":1,"write":1},
+    {"create":1,"delete":0,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"Accounts User","share":1,"write":1}
+  ],
+  "search_fields": "property,unit,tenant",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "name",
+  "track_changes": 1
+}

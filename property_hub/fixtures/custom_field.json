@@ -1,0 +1,40 @@
+[
+ {
+  "doctype": "Custom Field",
+  "dt": "Customer",
+  "fieldname": "civil_id",
+  "fieldtype": "Data",
+  "label": "Civil ID",
+  "insert_after": "customer_name",
+  "module": "Property Hub"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Customer",
+  "fieldname": "tenant_type",
+  "fieldtype": "Select",
+  "label": "Tenant Type",
+  "options": "\nIndividual\nCorporate",
+  "insert_after": "civil_id",
+  "module": "Property Hub"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Customer",
+  "fieldname": "emergency_contact",
+  "fieldtype": "Data",
+  "label": "Emergency Contact",
+  "insert_after": "tenant_type",
+  "module": "Property Hub"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Supplier",
+  "fieldname": "property_owner_ref",
+  "fieldtype": "Link",
+  "label": "Property Owner",
+  "options": "Property Owner",
+  "insert_after": "supplier_name",
+  "module": "Property Hub"
+ }
+]

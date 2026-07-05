@@ -1,0 +1,316 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Estate Management\",\"level\":4,\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Properties\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Leasing\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Finance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Maintenance\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2026-07-05 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "fa fa-home",
+ "idx": 0,
+ "indicator_color": "blue",
+ "is_hidden": 0,
+ "label": "Estate Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Properties",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property",
+   "link_count": 0,
+   "link_to": "Property",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Unit",
+   "link_count": 0,
+   "link_to": "Property Unit",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Owner",
+   "link_count": 0,
+   "link_to": "Property Owner",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leasing",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lease Contract",
+   "link_count": 0,
+   "link_to": "Lease Contract",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rent Schedule",
+   "link_count": 0,
+   "link_to": "Rent Schedule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Finance",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance Request",
+   "link_count": 0,
+   "link_to": "Maintenance Request",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Available Units Report",
+   "link_count": 0,
+   "link_to": "Available Units Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Property Unit",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Active Lease Contracts Report",
+   "link_count": 0,
+   "link_to": "Active Lease Contracts Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Lease Contract",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Expiring Contracts Report",
+   "link_count": 0,
+   "link_to": "Expiring Contracts Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Lease Contract",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Overdue Rent Report",
+   "link_count": 0,
+   "link_to": "Overdue Rent Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Rent Schedule",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Tenant Payment History",
+   "link_count": 0,
+   "link_to": "Tenant Payment History",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Rent Schedule",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Owner Property Summary",
+   "link_count": 0,
+   "link_to": "Owner Property Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Property",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Monthly Rent Collection Report",
+   "link_count": 0,
+   "link_to": "Monthly Rent Collection Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Rent Schedule",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Maintenance Requests Report",
+   "link_count": 0,
+   "link_to": "Maintenance Requests Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Maintenance Request",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Maintenance Cost by Property",
+   "link_count": 0,
+   "link_to": "Maintenance Cost by Property",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Maintenance Request",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Estate Management",
+ "name": "Estate Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "format": "{} Properties",
+   "label": "Property",
+   "link_to": "Property",
+   "stats_filter": "{ \"status\": \"Available\" }",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "format": "{} Units",
+   "label": "Property Unit",
+   "link_to": "Property Unit",
+   "stats_filter": "{ \"status\": \"Available\" }",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Active Leases",
+   "label": "Lease Contract",
+   "link_to": "Lease Contract",
+   "stats_filter": "{ \"status\": \"Active\" }",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "format": "{} Open",
+   "label": "Maintenance Request",
+   "link_to": "Maintenance Request",
+   "stats_filter": "{ \"status\": \"Open\" }",
+   "type": "DocType"
+  }
+ ],
+ "title": "Estate Management"
+}
