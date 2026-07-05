@@ -1,6 +1,7 @@
 [
  {
   "doctype": "Custom Field",
+  "name": "Customer-civil_id",
   "dt": "Customer",
   "fieldname": "civil_id",
   "fieldtype": "Data",
@@ -10,6 +11,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Customer-tenant_type",
   "dt": "Customer",
   "fieldname": "tenant_type",
   "fieldtype": "Select",
@@ -20,6 +22,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Customer-emergency_contact",
   "dt": "Customer",
   "fieldname": "emergency_contact",
   "fieldtype": "Data",
@@ -29,6 +32,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Supplier-property_owner_ref",
   "dt": "Supplier",
   "fieldname": "property_owner_ref",
   "fieldtype": "Link",

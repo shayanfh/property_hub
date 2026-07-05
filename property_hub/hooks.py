@@ -10,7 +10,15 @@ required_apps = ["erpnext"]
 
 # Fixtures - custom fields installed on bench migrate
 fixtures = [
-	{"dt": "Custom Field", "filters": [["module", "=", "Property Hub"]]},
+	{
+		"dt": "Custom Field",
+		"filters": [["name", "in", [
+			"Customer-civil_id",
+			"Customer-tenant_type",
+			"Customer-emergency_contact",
+			"Supplier-property_owner_ref",
+		]]],
+	},
 ]
 
 # Document Events
