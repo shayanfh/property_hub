@@ -86,6 +86,52 @@ PROPERTIES = [
 		"city": "Sohar",
 		"final_status": "Available",
 	},
+	# ── New 5 properties ─────────────────────────────────────────────────────
+	{
+		"property_name": "Nizwa Heritage Apartments",
+		"property_code": "NHA-001",
+		"owner_index": 1,
+		"property_type": "Residential",
+		"address": "Old Town Road, Near Fort",
+		"city": "Nizwa",
+		"final_status": "Occupied",
+	},
+	{
+		"property_name": "Sur Seafront Towers",
+		"property_code": "SST-001",
+		"owner_index": 2,
+		"property_type": "Residential",
+		"address": "Corniche Street, Block 4",
+		"city": "Sur",
+		"final_status": "Occupied",
+	},
+	{
+		"property_name": "Barka Commercial Plaza",
+		"property_code": "BCP-001",
+		"owner_index": 0,
+		"property_type": "Commercial",
+		"address": "Barka Main Road, Opposite Municipality",
+		"city": "Barka",
+		"final_status": "Occupied",
+	},
+	{
+		"property_name": "Seeb Business Park",
+		"property_code": "SBP-001",
+		"owner_index": 2,
+		"property_type": "Mixed Use",
+		"address": "Airport Heights, Way 6031",
+		"city": "Seeb",
+		"final_status": "Available",
+	},
+	{
+		"property_name": "Al-Khuwair Luxury Residences",
+		"property_code": "KLR-001",
+		"owner_index": 1,
+		"property_type": "Residential",
+		"address": "Al-Khuwair 33, Way 2211",
+		"city": "Muscat",
+		"final_status": "Occupied",
+	},
 ]
 
 # ── Units ─────────────────────────────────────────────────────────────────────
@@ -115,6 +161,25 @@ UNITS = [
 	{"unit_number": "W01", "prop_index": 4, "floor": 0, "unit_type": "Warehouse",  "rent_amount": 600,  "bedrooms": 0, "bathrooms": 1, "area": 400.0, "final_status": "Rented"},
 	{"unit_number": "W02", "prop_index": 4, "floor": 0, "unit_type": "Warehouse",  "rent_amount": 500,  "bedrooms": 0, "bathrooms": 1, "area": 300.0, "final_status": "Available"},
 	{"unit_number": "W03", "prop_index": 4, "floor": 0, "unit_type": "Warehouse",  "rent_amount": 400,  "bedrooms": 0, "bathrooms": 0, "area": 200.0, "final_status": "Available"},
+	# ── Nizwa Heritage Apartments (3 units) ──────────
+	{"unit_number": "F1-01","prop_index": 5, "floor": 1, "unit_type": "2 Bedroom", "rent_amount": 350,  "bedrooms": 2, "bathrooms": 1, "area": 105.0, "final_status": "Rented"},
+	{"unit_number": "F2-01","prop_index": 5, "floor": 2, "unit_type": "3 Bedroom", "rent_amount": 500,  "bedrooms": 3, "bathrooms": 2, "area": 140.0, "final_status": "Rented"},
+	{"unit_number": "F2-02","prop_index": 5, "floor": 2, "unit_type": "1 Bedroom", "rent_amount": 220,  "bedrooms": 1, "bathrooms": 1, "area": 65.0,  "final_status": "Available"},
+	# ── Sur Seafront Towers (3 units) ─────────────────
+	{"unit_number": "T1-101","prop_index": 6, "floor": 1, "unit_type": "Studio",   "rent_amount": 180,  "bedrooms": 0, "bathrooms": 1, "area": 40.0,  "final_status": "Rented"},
+	{"unit_number": "T1-102","prop_index": 6, "floor": 1, "unit_type": "2 Bedroom","rent_amount": 420,  "bedrooms": 2, "bathrooms": 2, "area": 110.0, "final_status": "Reserved"},
+	{"unit_number": "T2-201","prop_index": 6, "floor": 2, "unit_type": "3 Bedroom","rent_amount": 600,  "bedrooms": 3, "bathrooms": 2, "area": 155.0, "final_status": "Rented"},
+	# ── Barka Commercial Plaza (2 units) ─────────────
+	{"unit_number": "S01",  "prop_index": 7, "floor": 0, "unit_type": "Shop",      "rent_amount": 700,  "bedrooms": 0, "bathrooms": 1, "area": 80.0,  "final_status": "Rented"},
+	{"unit_number": "O01",  "prop_index": 7, "floor": 1, "unit_type": "Office",    "rent_amount": 950,  "bedrooms": 0, "bathrooms": 2, "area": 140.0, "final_status": "Rented"},
+	# ── Seeb Business Park (3 units) ──────────────────
+	{"unit_number": "R01",  "prop_index": 8, "floor": 1, "unit_type": "Office",    "rent_amount": 1100, "bedrooms": 0, "bathrooms": 2, "area": 180.0, "final_status": "Rented"},
+	{"unit_number": "R02",  "prop_index": 8, "floor": 1, "unit_type": "Office",    "rent_amount": 1100, "bedrooms": 0, "bathrooms": 2, "area": 180.0, "final_status": "Available"},
+	{"unit_number": "S01B", "prop_index": 8, "floor": 0, "unit_type": "Shop",      "rent_amount": 600,  "bedrooms": 0, "bathrooms": 1, "area": 70.0,  "final_status": "Under Maintenance"},
+	# ── Al-Khuwair Luxury Residences (3 units) ────────
+	{"unit_number": "201",  "prop_index": 9, "floor": 2, "unit_type": "3 Bedroom", "rent_amount": 800,  "bedrooms": 3, "bathrooms": 2, "area": 190.0, "final_status": "Rented"},
+	{"unit_number": "202",  "prop_index": 9, "floor": 2, "unit_type": "2 Bedroom", "rent_amount": 580,  "bedrooms": 2, "bathrooms": 2, "area": 135.0, "final_status": "Rented"},
+	{"unit_number": "301",  "prop_index": 9, "floor": 3, "unit_type": "Penthouse", "rent_amount": 1800, "bedrooms": 4, "bathrooms": 3, "area": 280.0, "final_status": "Reserved"},
 ]
 # unit indices summary:
 #  0=AQT101(Rented)  1=AQT102(Rented)  2=AQT201(Reserved)
@@ -122,6 +187,11 @@ UNITS = [
 #  5=A101(Rented)    6=A102(UnderMaint) 7=B201(Reserved) 8=B202(Rented)
 #  9=V01(Rented)    10=V02(Rented)     11=V03(Rented)
 # 12=W01(Rented)    13=W02(Available)  14=W03(Available)
+# 15=NHA-F1-01(Rented) 16=NHA-F2-01(Rented) 17=NHA-F2-02(Available)
+# 18=SST-T1-101(Rented) 19=SST-T1-102(Reserved) 20=SST-T2-201(Rented)
+# 21=BCP-S01(Rented) 22=BCP-O01(Rented)
+# 23=SBP-R01(Rented) 24=SBP-R02(Available) 25=SBP-S01B(UnderMaint)
+# 26=KLR-201(Rented) 27=KLR-202(Rented) 28=KLR-301(Reserved)
 
 # ── Tenants / Customers ───────────────────────────────────────────────────────
 
@@ -136,6 +206,16 @@ TENANTS = [
 	{"customer_name": "Salalah Trading Est.",        "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 7
 	{"customer_name": "Aisha Al-Hinai",              "customer_type": "Individual", "civil_id": "10901234", "tenant_type": "Individual"},   # 8
 	{"customer_name": "Muscat Freight Co.",          "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 9
+	{"customer_name": "Ibrahim Al-Kindi",            "customer_type": "Individual", "civil_id": "11012345", "tenant_type": "Individual"},   # 10
+	{"customer_name": "Zahra Al-Balushi",            "customer_type": "Individual", "civil_id": "11123456", "tenant_type": "Individual"},   # 11
+	{"customer_name": "Nizwa Medical Group LLC",     "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 12
+	{"customer_name": "Ahmed Al-Amri",               "customer_type": "Individual", "civil_id": "11234567", "tenant_type": "Individual"},   # 13
+	{"customer_name": "Sur Shipping Co.",            "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 14
+	{"customer_name": "Barka Food Industries LLC",   "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 15
+	{"customer_name": "Seeb Investments LLC",        "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 16
+	{"customer_name": "Nadia Al-Ghafri",             "customer_type": "Individual", "civil_id": "11345678", "tenant_type": "Individual"},   # 17
+	{"customer_name": "Oman Horizons Co.",           "customer_type": "Company",    "civil_id": "",         "tenant_type": "Corporate"},    # 18
+	{"customer_name": "Tariq Al-Muqbali",            "customer_type": "Individual", "civil_id": "11456789", "tenant_type": "Individual"},   # 19
 ]
 
 # ── Lease Contracts ───────────────────────────────────────────────────────────
@@ -159,7 +239,26 @@ LEASE_CONTRACTS = [
 	# Jabriya V03 - recent, all paid
 	{"tenant_index": 7, "unit_index": 11, "start_months_ago": 3,  "duration_months": 12, "paid_months": 3},
 	# Warehouse W01 - corporate, 2 months in
-	{"tenant_index": 4, "unit_index": 12, "start_months_ago": 2,  "duration_months": 12, "paid_months": 2},
+	{"tenant_index": 4,  "unit_index": 12, "start_months_ago": 2,  "duration_months": 12, "paid_months": 2},
+	# ── New leases for 5 new properties ──────────────
+	# Nizwa F1-01: 7 months in, good payer
+	{"tenant_index": 10, "unit_index": 15, "start_months_ago": 7,  "duration_months": 12, "paid_months": 6},
+	# Nizwa F2-01: 3 months in, all paid
+	{"tenant_index": 11, "unit_index": 16, "start_months_ago": 3,  "duration_months": 12, "paid_months": 3},
+	# Sur T1-101: 9 months in, 1 overdue (expiring in 3 months)
+	{"tenant_index": 12, "unit_index": 18, "start_months_ago": 9,  "duration_months": 12, "paid_months": 8},
+	# Sur T2-201: 6 months into a 24-month contract
+	{"tenant_index": 13, "unit_index": 20, "start_months_ago": 6,  "duration_months": 24, "paid_months": 5},
+	# Barka S01: 10 months in → expiring in ~2 months (Expiring Report)
+	{"tenant_index": 14, "unit_index": 21, "start_months_ago": 10, "duration_months": 12, "paid_months": 8},
+	# Barka O01: 4 months in, all paid
+	{"tenant_index": 15, "unit_index": 22, "start_months_ago": 4,  "duration_months": 12, "paid_months": 4},
+	# Seeb R01: 5 months in, 1 overdue
+	{"tenant_index": 16, "unit_index": 23, "start_months_ago": 5,  "duration_months": 12, "paid_months": 4},
+	# Khuwair 201: 8 months in, 1 overdue
+	{"tenant_index": 17, "unit_index": 26, "start_months_ago": 8,  "duration_months": 12, "paid_months": 7},
+	# Khuwair 202: 2 months in, new contract
+	{"tenant_index": 19, "unit_index": 27, "start_months_ago": 2,  "duration_months": 12, "paid_months": 2},
 ]
 
 # ── Maintenance Requests ──────────────────────────────────────────────────────
@@ -200,6 +299,31 @@ MAINTENANCE_REQUESTS = [
 		"issue_type": "Cleaning",   "priority": "Medium", "status": "In Progress",
 		"estimated_cost": 350, "actual_cost": None,
 		"desc": "Full deep clean and repainting of studio unit A102 before relisting.",
+	},
+	# ── Maintenance for new properties ───────────────
+	{
+		"unit_index": 16, "tenant_index": 11,
+		"issue_type": "Plumbing",   "priority": "Medium", "status": "Open",
+		"estimated_cost": 120, "actual_cost": None,
+		"desc": "Low water pressure in bathroom shower. Pipe inspection required.",
+	},
+	{
+		"unit_index": 20, "tenant_index": 13,
+		"issue_type": "HVAC",       "priority": "High",   "status": "Assigned",
+		"estimated_cost": 650, "actual_cost": None,
+		"desc": "AC compressor making loud noise. Possible compressor failure — technician assigned.",
+	},
+	{
+		"unit_index": 21, "tenant_index": 14,
+		"issue_type": "Security",   "priority": "High",   "status": "Completed",
+		"estimated_cost": 500, "actual_cost": 480,
+		"desc": "CCTV system not recording — replaced 4 cameras and upgraded DVR unit.",
+	},
+	{
+		"unit_index": 26, "tenant_index": 17,
+		"issue_type": "Electrical", "priority": "Medium", "status": "In Progress",
+		"estimated_cost": 250, "actual_cost": None,
+		"desc": "Flickering lights in master bedroom. Wiring inspection underway.",
 	},
 ]
 
